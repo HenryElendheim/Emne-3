@@ -6,5 +6,6 @@ namespace Undervisning_Emne_3
 {
     internal class NewClass
     {
+
     }
 }
