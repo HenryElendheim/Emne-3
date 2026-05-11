@@ -1,4 +1,5 @@
-﻿using Undervisning_Emne_3;
+﻿using test;
+using Undervisning_Emne_3;
 
 RunAll();
 void RunAll()
@@ -6,7 +7,7 @@ void RunAll()
     while (true)
     {
         Console.Clear();
-        Console.WriteLine("1-RPS | 2-If/Else | 3-RandomHobby");
+        Console.WriteLine("1-RPS | 2-If/Else | 3-RandomHobby | 4-TekstTukling | 5-Krokodillespillet");
         string input = Console.ReadLine();
         switch (input)
         {
@@ -24,9 +25,18 @@ void RunAll()
                 var RH = new RandomHobby();
                 RH.Test();
                 break;
+            case "4":
+                var TT = new TekstTukling();
+                break;
+            case "5":
+                var KS = new Krokodillespillet();
+                KS.Run();
+                break;
             default:
                 RunAll();
                 break;
         }
+        Console.WriteLine("Press any key to continue");
+        Console.ReadKey();
     }
 }
