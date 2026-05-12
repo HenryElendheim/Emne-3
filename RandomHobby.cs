@@ -8,7 +8,7 @@ namespace Undervisning_Emne_3
     {
         private string[] _hobbies = { "Hobby 1", "Hobby 2", "Hobby 3", "Hobby 4", "Hobby 5" };
 
-        public void Test()
+        public void Run()
         {
             Console.WriteLine("Who wants a new hobby?");
             string name = Console.ReadLine();
