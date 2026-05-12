@@ -12,7 +12,7 @@ namespace Undervisning_Emne_3
 
         public void Run()
         {
-            Console.WriteLine($"Pick a choice. Rock (1), Paper (2) or Scissors (3) | Type 'x' to exit");
+            Console.WriteLine($"Pick a choice. Rock (1), Paper (2) or Scissors (3) | Type 'exit' to leave");
             Game();
         }
 
@@ -22,7 +22,7 @@ namespace Undervisning_Emne_3
             //Player
             var choice = Console.ReadLine();
 
-            if (choice == "x")
+            if (choice == "exit")
             {
                 return;
             }
