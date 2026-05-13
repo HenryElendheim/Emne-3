@@ -66,21 +66,13 @@ namespace Undervisning_Emne_3
             }
 
             //Player wins
-            else if (RNG == 1 && playerNumber == 2)
-            {
-                Console.WriteLine("Player won");
-            }
-            else if (RNG == 2 && playerNumber == 3)
+            else if (RNG == 1 && playerNumber == 2 || RNG == 2 && playerNumber == 3 || RNG == 3 && playerNumber == 1)
             {
                 Console.WriteLine("Player won");
             }
 
             //Enemy wins
-            else if (RNG == 2 && playerNumber == 1)
-            {
-                Console.WriteLine("Enemy won");
-            }
-            else if (RNG == 3 && playerNumber == 2)
+            else if (RNG == 2 && playerNumber == 1 || RNG == 3 && playerNumber == 2 || RNG == 1 && playerNumber == 3)
             {
                 Console.WriteLine("Enemy won");
             }
