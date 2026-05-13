@@ -1,6 +1,7 @@
 ﻿using test;
 using Undervisning_Emne_3;
 
+
 RunAll();
 void RunAll()
 {
@@ -42,7 +43,7 @@ void RunAll()
                 GT.Run();
                 break;
             case "8":
-
+                
                 break;
             case "9":
 
