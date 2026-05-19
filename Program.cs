@@ -10,8 +10,9 @@ void RunAll()
         Console.WriteLine("1-RPS | 2-If/Else | 3-RandomHobby | 4-TekstTukling | 5-Krokodillespillet" +
             "\n\n6-HvaGjørDenneKoden | 7-GjettTallet " +
             "\n\n8-KlasserOgProperties_Constructor_ObjekterIList" +
-            "\n\n9-MethodOverload_DefaultValues | 10-? | 11-?" +
-            "\n\n");
+            "\n\n9-MethodOverload_DefaultValues | 10-BossFight | 11-?" +
+            "\n\nType 'exit' to leave!" +
+            "\n");
         string input = Console.ReadLine();
         switch (input)
         {
@@ -57,8 +58,11 @@ void RunAll()
                 MODV.PrintWelcomeMessage();
                 break;
             case "10":
-
+                var BF = new GameCharacter();
+                BF.Run();
                 break;
+            case "exit":
+                return;
             default:
                 RunAll();
                 break;
