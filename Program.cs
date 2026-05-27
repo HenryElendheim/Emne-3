@@ -10,7 +10,7 @@ void RunAll()
         Console.WriteLine("1-RPS | 2-If/Else | 3-RandomHobby | 4-TekstTukling | 5-Krokodillespillet" +
             "\n\n6-HvaGjørDenneKoden | 7-GjettTallet " +
             "\n\n8-KlasserOgProperties_Constructor_ObjekterIList" +
-            "\n\n9-MethodOverload_DefaultValues | 10-BossFight | 11-?" +
+            "\n\n9-MethodOverload_DefaultValues | 10-BossFight | 11-Hangman" +
             "\n\nType 'exit' to leave!" +
             "\n");
         string input = Console.ReadLine();
@@ -60,6 +60,10 @@ void RunAll()
             case "10":
                 var BF = new GameCharacter();
                 BF.Run();
+                break;
+            case "11":
+                var HM = new Hangman();
+                HM.Run();
                 break;
             case "exit":
                 return;
