@@ -179,7 +179,6 @@ namespace test
             //This tells you the word from the start (Mostly for debugging)
             //Console.WriteLine($"The word is {chosenWord}");
 
-
             //The whole loop
             while (lives > 0)
             {
@@ -208,6 +207,7 @@ namespace test
                 }
 
 
+                Console.WriteLine($"There are {charsLeft} letters left in this word");
                 Console.Write("Type a letter: ");
                 var inputKey = Console.ReadKey().Key.ToString().ToLower();
                 Console.WriteLine("\n", inputKey);
@@ -239,7 +239,7 @@ namespace test
 
                     if (lives > 0)
                     {
-                        Console.WriteLine($"{inputKey} is not the right key!\nYou have {lives} {(lives == 1 ? "Life" : "Lives")} remaning");
+                        Console.WriteLine($"{inputKey} is not the right key!\nYou have {lives} {(lives == 1 ? "LIFE" : "LIVES")} remaning");
                     }
                 }
             }

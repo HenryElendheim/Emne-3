@@ -11,6 +11,7 @@ void RunAll()
             "\n\n6-HvaGjørDenneKoden | 7-GjettTallet " +
             "\n\n8-KlasserOgProperties_Constructor_ObjekterIList" +
             "\n\n9-MethodOverload_DefaultValues | 10-BossFight | 11-Hangman" +
+            "\n\n12-BingBangBoom | 13-? | 14-?" +
             "\n\nType 'exit' to leave!" +
             "\n");
         string input = Console.ReadLine();
@@ -64,6 +65,20 @@ void RunAll()
             case "11":
                 var HM = new Hangman();
                 HM.Run();
+                break;
+            case "12":
+                //Console.WriteLine("Write a name, race and an optional secondary race.");
+                //var inputName = Console.ReadLine();
+                //var inputRace = Console.ReadLine();
+                //var inputRace2 = Console.ReadLine();   
+                //var BBB = new BingBangBoom(inputName, inputRace, inputRace2);
+                //BBB.Run();
+                break;
+            case "13":
+
+                break;
+            case "14":
+
                 break;
             case "exit":
                 return;
